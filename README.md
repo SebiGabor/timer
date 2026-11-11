@@ -1,4 +1,4 @@
-# Tact — Cronometru Silențios de Curs (PWA)
+# Tact Cronometru
 
 **Tact** este o aplicație web progresivă (PWA) gândită special pentru profesori și speakeri care vor să respecte bugetul de timp în sala de curs, fără alarme sonore și fără distrageri.
 

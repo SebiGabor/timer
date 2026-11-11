@@ -595,7 +595,7 @@ export const RunnerView: React.FC<RunnerViewProps> = ({
           </div>
           <p className="mt-2 text-xs font-medium uppercase tracking-widest text-zinc-400">
             {isAtOrPastZero
-              ? 'Depășire timp alocat — treci la următoarea'
+              ? 'Depășire timp alocat - treci la următoarea'
               : `Alocat: ${formatDurationHuman(currentSection.durationSeconds)} • ${Math.round(remainingPct)}% rămas`}
           </p>
         </div>

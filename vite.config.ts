@@ -12,7 +12,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'pwa-192x192.png', 'pwa-512x512.png'],
       manifest: {
-        name: 'Tact — Cronometru Silențios de Curs',
+        name: 'Tact Cronometru',
         short_name: 'Tact',
         description: 'Temporizator secvențial silențios cu rețete de timp pentru cursuri și prezentări.',
         theme_color: '#09090b',

@@ -158,7 +158,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 Sesiune întreruptă
               </p>
               <p className="mt-0.5 text-sm font-semibold text-zinc-100">
-                {activeRunSnapshot.recipeTitle} — Etapa {activeRunSnapshot.currentIndex + 1}/
+                {activeRunSnapshot.recipeTitle} - Etapa {activeRunSnapshot.currentIndex + 1}/
                 {activeRunSnapshot.liveSections.length}
               </p>
             </div>
