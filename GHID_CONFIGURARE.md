@@ -1,4 +1,4 @@
-# Ghid Complet de Configurare & Deploy — Tact PWA
+# Ghid Complet de Configurare & Deploy - Tact PWA
 
 Acest ghid acoperă tot procesul, de la rularea locală până la sincronizarea cu **Turso** și publicarea pe **GitHub Pages** ca PWA instalabil pe telefon.
 
@@ -43,11 +43,11 @@ npm -v
 npm run build
 npm run preview
 ```
-Deschide link-ul afișat (`http://localhost:4173`) — în Chrome Desktop ar trebui să apară pictograma de instalare PWA în bara de adrese.
+Deschide link-ul afișat (`http://localhost:4173`) - în Chrome Desktop ar trebui să apară pictograma de instalare PWA în bara de adrese.
 
 ---
 
-## 3. Configurare bază de date Turso (Opțional — Sincronizare Laptop ↔ Telefon)
+## 3. Configurare bază de date Turso (Opțional - Sincronizare Laptop ↔ Telefon)
 
 ### De ce stocăm cheile Turso în Setările aplicației și NU în codul de pe GitHub?
 **GitHub Pages** servește fișiere statice publice (`index.html` și JavaScript). Orice variabilă `VITE_*` introdusă într-un build GitHub Actions devine vizibilă oricui inspectează codul sursă din browser.
@@ -58,7 +58,7 @@ De aceea, **Tact** folosește o arhitectură **Local-First + BYOK (Bring Your Ow
 
 ### Pașii pentru crearea bazei de date în Turso
 
-#### Varianta A — Prin Turso CLI (Linux / macOS / WSL2)
+#### Varianta A - Prin Turso CLI (Linux / macOS / WSL2)
 1. Instalează Turso CLI:
    ```bash
    curl -sSfL https://get.tur.so/install.sh | bash
@@ -81,7 +81,7 @@ De aceea, **Tact** folosește o arhitectură **Local-First + BYOK (Bring Your Ow
    ```
    *(Sfat: dacă nu vrei să reîmprospătezi token-ul periodic, poți folosi `turso db tokens create tact-curs --expiration none`, sau o durată de 1 an.)*
 
-#### Varianta B — Din interfața web Turso (`app.turso.tech`)
+#### Varianta B - Din interfața web Turso (`app.turso.tech`)
 1. Creează o bază de date nouă numită `tact-curs`.
 2. Copiază **Database URL** (`libsql://...`).
 3. Apasă **Create Token** (Read & Write) și copiază token-ul generat.
@@ -103,7 +103,7 @@ Proiectul conține deja workflow-ul `.github/workflows/deploy.yml`, care configu
 
 ### Pasul 1: Creează repository pe GitHub
 1. Mergi pe [github.com/new](https://github.com/new).
-2. Numește repository-ul, de exemplu `tact-curs` (poate fi Public sau Private dacă ai GitHub Pro; pentru GitHub Pages gratuit, repository-ul trebuie să fie Public — codul nu conține niciun secret!).
+2. Numește repository-ul, de exemplu `tact-curs` (poate fi Public sau Private dacă ai GitHub Pro; pentru GitHub Pages gratuit, repository-ul trebuie să fie Public - codul nu conține niciun secret!).
 3. **Nu** bifa `Add a README` sau `.gitignore` (le avem deja pregătite).
 
 ### Pasul 2: Trimite codul pe GitHub
@@ -140,4 +140,4 @@ git push -u origin main
 ### Checklist rapid înainte de curs
 - Pune telefonul pe **Mod Silențios / Nu deranja** (aplicația Tact nu emite niciun sunet, dar notificările altor aplicații te pot întrerupe).
 - Lasă **Vibrațiile oprite** în Tact dacă pui telefonul pe catedră (pe lemn se aud); pornește-le din iconița de telefon din ecranul de curs doar dacă îl ții în buzunar.
-- Dacă ai trecut de timp pe o secțiune și rămâi în urmă, folosește butonul **„Ajustează restul”** din bara galbenă — acesta recalculează doar sesiunea curentă fără să strice rețeta salvată!
+- Dacă ai trecut de timp pe o secțiune și rămâi în urmă, folosește butonul **„Ajustează restul”** din bara galbenă - acesta recalculează doar sesiunea curentă fără să strice rețeta salvată!
